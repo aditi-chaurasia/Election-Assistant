@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#667eea" />
+    <meta
+      name="description"
+      content="Election Assistant India - Your comprehensive guide to understanding the Indian election process"
+    />
+    <title>Election Assistant India - Understand Elections Simply</title>
+
+    <!-- Accessibility Features -->
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- Progressive Web App Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🗳️</text></svg>" />
+
+    <!-- Preload Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+          'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      noscript {
+        display: block;
+        padding: 20px;
+        background-color: #fee;
+        color: #c33;
+        font-size: 16px;
+        text-align: center;
+        border: 1px solid #c33;
+        margin: 20px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <!-- Skip to main content link for accessibility -->
+    <script>
+      const skipLink = document.createElement('a');
+      skipLink.href = '#root';
+      skipLink.textContent = 'Skip to main content';
+      skipLink.className = 'skip-to-main';
+      document.body.insertBefore(skipLink, document.body.firstChild);
+    </script>
+  </body>
+</html>
