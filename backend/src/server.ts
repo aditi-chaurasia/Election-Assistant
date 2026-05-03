@@ -66,7 +66,7 @@ app.get('/health', (_req: Request, res: Response) => {
 /**
  * Root Endpoint
  */
-app.get('/', (req: Request, res: Response) => {
+app.get('/', (_req: Request, res: Response) => {
   res.send('Backend is running 🚀');
 });
 
