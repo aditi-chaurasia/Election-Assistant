@@ -14,7 +14,6 @@ class AIService {
 
   constructor() {
     this.geminiApiKey = process.env.GEMINI_API_KEY || null;
-    console.log('GEMINI KEY:', process.env.GEMINI_API_KEY);
     if (!this.geminiApiKey) {
       logger.warn('Gemini API Key not configured. Chat functionality will be limited.');
     }

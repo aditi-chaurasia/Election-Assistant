@@ -64,6 +64,13 @@ app.get('/health', (_req: Request, res: Response) => {
 });
 
 /**
+ * Root Endpoint
+ */
+app.get('/', (req: Request, res: Response) => {
+  res.send('Backend is running 🚀');
+});
+
+/**
  * API Routes
  */
 app.use('/api/chat', chatRoutes);
